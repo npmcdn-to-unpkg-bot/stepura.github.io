@@ -122,11 +122,11 @@ ul, ol, dl {
     list-style-type: none;
 }
 a {
-    color: #80d8ff;
+    color: #0277bd;
     font-weight: bold;
 }
 a:hover, a:focus {
-    color: #0091ea;
+    color: #01579b;
     -webkit-transition: color 0.2s ease;
     -moz-transition: color 0.2s ease;
     -o-transition: color 0.2s ease;
