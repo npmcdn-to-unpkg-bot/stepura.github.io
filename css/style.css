@@ -103,7 +103,9 @@ body {
         color: #000;
     }
 
-
+.content p {
+    font-weight: 300;
+}
 
 
 
@@ -122,16 +124,17 @@ ul, ol, dl {
     list-style-type: none;
 }
 a {
-    color: #0277bd;
+    color: #333;
     font-weight: bold;
 }
 a:hover, a:focus {
-    color: #01579b;
+    color: #000;
     -webkit-transition: color 0.2s ease;
     -moz-transition: color 0.2s ease;
     -o-transition: color 0.2s ease;
     -ms-transition: color 0.2s ease;
     transition: color 0.2s ease;
+    text-decoration: underline;
 }
 
 
