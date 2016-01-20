@@ -124,11 +124,11 @@ ul, ol, dl {
     list-style-type: none;
 }
 a {
-    color: #00796b;
+    color: #479FD8;
     font-weight: 400;
 }
 a:hover, a:focus {
-    color: #004d40;
+    color: #126EB7;
     -webkit-transition: color 0.2s ease;
     -moz-transition: color 0.2s ease;
     -o-transition: color 0.2s ease;
