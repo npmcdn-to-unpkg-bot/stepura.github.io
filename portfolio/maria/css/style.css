@@ -1,6 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Amatic+SC&subset=latin,cyrillic-ext);
+
 *, *::before, *::after {
 	box-sizing: border-box;
 }
+
+body {
+	font: 12px 'Open Sans', sans-serif;
+}
+
+h1 {
+	margin: 0;
+}
+
+
+
+/* 
+ * Header
+ */
+
+.header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	padding: 50px 70px 0;
+	z-index: 2;
+}
+
+.header__logo {
+	float: left;
+	font: 42px/42px 'Amatic SC', sans-serif;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.5);
+	transition: .2s;
+}
+
+.header__logo:hover {
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+	padding-bottom: 2px;
+}
+
+.header__nav {
+	float: right;
+	width: 79%;
+	text-align: right;
+}
+
+.header__nav-item {
+	margin-left: 25px;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.header__nav-item:hover {
+	text-decoration: underline;
+}
+
 
 .pagesection__item {
 	background-size: cover;
@@ -31,7 +90,7 @@
 }
 
 .pagesection__item.active p {
-	margin-left: 100px;
+	margin-left: 70px;
 }
 
 .fp-tableCell {
@@ -46,6 +105,10 @@
 }
 
 /*******  Navigation Slider ***********/
+#fp-nav {
+	margin-right: 70px;
+}
+
 #fp-nav ul li a span {
 	background: #fff;
 	transition: all .2s;
@@ -134,45 +197,53 @@ border-radius: 100%;
 	transform: rotate(270deg);
 }
 
-.header {
-	position: fixed;
-	left: 0;
-	right: 0;
-	padding: 50px 100px 0;
-	z-index: 2;
-}
 
-.header__logo {
-	float: left;
-	width: 20%;
-}
-
-.header__nav {
-	float: right;
-	width: 79%;
-	text-align: right;
-}
 
 
 
 
 .footer {
+	width: 100%;
 	position: fixed;
 	bottom: 0;
-	right: 0;
-	margin: 0 100px 50px;
+	left: 0;
+	padding: 0 70px 50px;
 	z-index: 2;
 }
 
+.callme {
+	float: left;
+	width: 30%;
+	line-height: 30px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.callme__mynumber {
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	transition: .2s;
+}
+
+.callme__mynumber:hover {
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 1px 0 rgba(1, 0, 0, 0.5);
+}
+
 .follow {
+	float: right;
+	width: 70%;
   font-size: 0;
+  text-align: right;
 }
 
 .follow__title {
   margin: 0 5px;
   display: inline-block;
   color: #fff;
-  font-size: 13px;
+  font-size: 14px;
   vertical-align: bottom;
   line-height: 30px;
 }
@@ -228,9 +299,9 @@ border-radius: 100%;
 }
 
 .follow__entry {
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 1);
   background: none;
-  border-color: rgba(255, 255, 255, .5);
+  border-color: rgba(255, 255, 255, 1);
 }
 
 .follow__entry:hover {

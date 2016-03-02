@@ -1,418 +1,409 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1000">
-    <title>Киностудия им. Горького</title>
-    <!-- Syles -->
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!--[if lt IE 9]>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>Киностудия им. Горького</title>
+  <!-- Syles -->
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
   <[endif]-->
-  </head>
+</head>
 
-  <body>
-    <div class="main-container">
-      <header class="main-header">
-        <div class="infobox">
-          <div class="info-box-wrapper">
-            <div class="infobox-first-section">
-              <span class="infobox-title">ОАО ТПО Центральная киностудия детских и юношеских фильмов имени Максима Горького</span>
-              <address class="infobox-address"><a class="infobox-address__link" href="#">Москва, ул. С. Эйзенштейна, 8</a></address>
-              <form class="infobox-search-box" action="" method="post">
-                <input class="infobox-search-box__search" type="search" placeholder="Поиск...">
-                <input class="infobox-search-box__submit" type="submit" value="">
-              </form>
-            </div>
-            <div class="infobox-second-section">
-              <span class="infobox-social-box"><a class="infobox-social-box__item" href="#">Facebook</a></span>
-              <span class="infobox-lang-select"><span class="infobox-lang-select__item infobox-lang-select__item--active">ru</span> / <a class="infobox-lang-select__item" href="#">en</a></span>
-            </div>
+<body>
+  <div class="main-container">
+    <header class="main-header">
+      <div class="infobox">
+        <div class="info-box-wrapper">
+          <div class="infobox-first-section">
+            <span class="infobox-title">ОАО ТПО Центральная киностудия детских и юношеских фильмов имени Максима Горького</span>
+            <address class="infobox-address"><a class="infobox-address__link" href="#">Москва, ул. С. Эйзенштейна, 8</a></address>
+            <form class="infobox-search-box" action="" method="post">
+              <input class="infobox-search-box__search" type="search" placeholder="Поиск...">
+              <input class="infobox-search-box__submit" type="submit" value="">
+            </form>
+          </div>
+          <div class="infobox-second-section">
+            <span class="infobox-social-box"><a class="infobox-social-box__item" href="#">Facebook</a></span>
+            <span class="infobox-lang-select"><span class="infobox-lang-select__item infobox-lang-select__item--active">ru</span> / <a class="infobox-lang-select__item" href="#">en</a></span>
           </div>
         </div>
-        <div class="main-nav">
-          <div class="main-nav-wrapper">
-            <div class="logo">
-              <img class="logo__image" src="img/logo.png" alt="Киностудия Горького" title="Киностудия Горького">
-            </div>
-            <nav class="menu">
-              <a class="menu__item" href="#">Новости</a>
-              <a class="menu__item" href="#">Каталог фильмов</a>
-              <a class="menu__item menu__item--other" href="#">Онлайн-кинотеатр</a>
-              <a class="menu__item" href="#">О киностудии</a>
-              <a class="menu__item" href="#">Проекты киностудии</a>
-              <a class="menu__item" href="#">НИКФИ</a>
-              <a class="menu__item" href="#">ЦНФ</a>
-              <a class="menu__item" href="#">Контакты</a>
-            </nav>
+      </div>
+      <div class="main-nav">
+        <div class="main-nav-wrapper">
+          <div class="logo">
+            <img class="logo__image" src="img/logo.png" alt="Киностудия Горького" title="Киностудия Горького">
           </div>
-        </div>
-      </header>
-
-      <div class="image-slider-wrapper">
-        <div class="image-slider">
-          <div>
-            <div class="image-slider__item" style="background-image: url(pic/slider/pic1.jpg);"></div>
-          </div>
-          <div>
-            <div class="image-slider__item" style="background-image: url(pic/slider/pic2.jpg);"></div>
-          </div>
-        </div>
-        <div class="image-slider-menu-wrapper">
           <nav class="menu">
-            <a class="menu__item menu__item--image" href="#">Павильоны</a>
-            <a class="menu__item menu__item--image" href="#">Помещения</a>
-            <a class="menu__item menu__item--image" href="#">Оборудование</a>
-            <a class="menu__item menu__item--image" href="#">Реквизит</a>
-            <a class="menu__item menu__item--image" href="#">Декорации</a>
-            <a class="menu__item menu__item--image" href="#">Постпродакшн</a>
+            <a class="menu__item" href="#">Новости</a>
+            <a class="menu__item" href="#">Каталог фильмов</a>
+            <a class="menu__item menu__item--other" href="#">Онлайн-кинотеатр</a>
+            <a class="menu__item" href="#">О киностудии</a>
+            <a class="menu__item" href="#">Проекты киностудии</a>
+            <a class="menu__item" href="#">НИКФИ</a>
+            <a class="menu__item" href="#">ЦНФ</a>
+            <a class="menu__item" href="#">Контакты</a>
           </nav>
         </div>
       </div>
+    </header>
 
-      <div class="content-slider-wrapper">
-        <div class="content-slider">
-          <div class="content-slider__item">Полина Гришина завоевала на «Кинотавре» приз за лучшую женскую роль в фильме "Спасение"<a href="#" class="content-slider__simple-link">Узнать больше</a><a href="#" class="content-slider__video-link">Смотреть онлайн</a>
-          </div>
-          <div class="content-slider__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, consectetur adipisicing elit <a href="#" class="content-slider__simple-link">Узнать больше</a><a href="#" class="content-slider__video-link">Смотреть онлайн</a>
-          </div>
+    <div class="image-slider-wrapper">
+      <div class="image-slider">
+        <div>
+          <div class="image-slider__item" style="background-image: url(pic/slider/pic1.jpg);"></div>
+        </div>
+        <div>
+          <div class="image-slider__item" style="background-image: url(pic/slider/pic2.jpg);"></div>
         </div>
       </div>
-
-      <div class="main-wrapper">
-        <!-- News -->
-        <div class="main-content">
-          <h2>Новости</h2>
-          <div class="news-item">
-            <div class="news-item__wrapper-image"><img class="news-item__image" src="pic/news/image-2-1.jpg" alt="">
-            </div>
-            <div class="news-item__wrapper">
-              <h3 class="news-item__title"><a class="news-item__title-link" href="#">Киностудия им. М. Горького монтирует «Спасение»</a></h3>
-              <time class="news-item__date" datetime="2014-05-14">14.05.2014</time>
-              <p> Большое жюри ежегодной Национальной Премии «Лавр» в составе 50-ти профессионалов в области неигрового кино закончило свою работу. Стал известен шорт лист – тройки номинантов в каждой категории. Фильм Киностудии Горького "Буквальная геометрия"
-                вышел в финал премии. Картина режиссера Екатерины Еременко вошла в шорт-лист фестиваля в номинации «Лучший научно-популярный, просветительский фильм». </p>
-            </div>
-          </div>
-          <div class="news-item">
-            <h3 class="news-item__title"><a class="news-item__title-link" href="#">Коллектив Киностудии Горького соболезнует родным и близким Эльдара Рязанова</a></h3>
-            <time class="news-item__date" datetime="2014-05-14">14.05.2014</time>
-            <p>Коллектив киностудии им. М. Горького и лично Сергей Анатольевич Зернов выражают искренние соболезнования семье Эльдара Александровича Рязанова, его родным и близким.</p>
-            <p>Мы скорбим о потере талантливого кинематографиста, непревзойденного мастера комедийного жанра, создавшего настоящие шедевры, на которых выросло не одно поколение. Эльдар Александрович был режиссером, внесшим неоценимый вклад в развитие отечественного
-              кино, и его имя навсегда останется в истории. </p>
-          </div>
-          <div class="news-item">
-            <div class="left-news-item">
-              <div class="news-item__wrapper-image news-item__wrapper-image--small"><img class="news-item__image" src="pic/news/image-2-2.jpg" alt="">
-              </div>
-              <div class="news-item__wrapper">
-                <h3 class="news-item__title"><a class="news-item__title-link" href="#">C 26 по 31 октября в киноклубе «Эльдар» пройдет фестиваль «Музыкальные истории» к 100-летию студии Горького</a></h3>
-                <time class="news-item__date" datetime="2014-05-14">14.05.2014</time>
-                <p>C 26 по 31 октября в киноклубе «Эльдар» пройдет фестиваль «Музыкальные истории», посвящённый 100-летию киностудии им. М. Горького. Фестиваль «Музыкальные истории» - это три основных события: бесплатные кинопоказы «Прекрасное далёко», кинопортреты
-                  Мастеров и музыкальная программа в Большом зале. 26-30 октября - «Прекрасное далёко»</p>
-              </div>
-            </div>
-            <div class="right-news-item">
-              <div class="news-item__wrapper-image news-item__wrapper-image--small"><img class="news-item__image" src="pic/news/image-2-3.jpg" alt="">
-              </div>
-              <div class="news-item__wrapper">
-                <h3 class="news-item__title"><a class="news-item__title-link" href="#">Мировая премьера фильма Киностудии Горького «Буквальная геометрия» состоится 13 октября в ЦДК</a></h3>
-                <time class="news-item__date" datetime="2014-05-14">14.05.2014</time>
-                <p>Мировая премьера фильма Екатерины Еременко «Буквальная геометрия» состоится 13 октября в Центре документального кино в Москве. Фильм Киностудии им. М. Горького открывает изнанку предельно закрытого математического мира. Вместе с режиссером
-                  картину представит один из героев фильма, математик Александр Бобенко. В отечественный прокат фильм выйдет 14 октября, прокатчиком выступает Фестиваль актуального научного кино ФАНК при поддержке Киностудии им. М. Горького.</p>
-              </div>
-            </div>
-          </div>
-          <div class="news-item">
-            <div class="news-item__wrapper-image"><img class="news-item__image" src="pic/news/image-2-1.jpg" alt="">
-            </div>
-            <div class="news-item__wrapper">
-              <h3 class="news-item__title"><a class="news-item__title-link" href="#">Киностудия им. М. Горького монтирует «Спасение»</a></h3>
-              <time class="news-item__date" datetime="2014-05-14">14.05.2014</time>
-              <p> Большое жюри ежегодной Национальной Премии «Лавр» в составе 50-ти профессионалов в области неигрового кино закончило свою работу. Стал известен шорт лист – тройки номинантов в каждой категории. Фильм Киностудии Горького "Буквальная геометрия"
-                вышел в финал премии. Картина режиссера Екатерины Еременко вошла в шорт-лист фестиваля в номинации «Лучший научно-популярный, просветительский фильм». </p>
-            </div>
-          </div>
-          <div class="news-item">
-            <h3 class="news-item__title"><a class="news-item__title-link" href="#">Коллектив Киностудии Горького соболезнует родным и близким Эльдара Рязанова</a></h3>
-            <time class="news-item__date" datetime="2014-05-14">14.05.2014</time>
-            <p>Коллектив киностудии им. М. Горького и лично Сергей Анатольевич Зернов выражают искренние соболезнования семье Эльдара Александровича Рязанова, его родным и близким.</p>
-            <p>Мы скорбим о потере талантливого кинематографиста, непревзойденного мастера комедийного жанра, создавшего настоящие шедевры, на которых выросло не одно поколение. Эльдар Александрович был режиссером, внесшим неоценимый вклад в развитие отечественного
-              кино, и его имя навсегда останется в истории. </p>
-          </div>
-          <div class="news-item">
-            <div class="left-news-item">
-              <div class="news-item__wrapper-image news-item__wrapper-image--small"><img class="news-item__image" src="pic/news/image-2-2.jpg" alt="">
-              </div>
-              <div class="news-item__wrapper">
-                <h3 class="news-item__title"><a class="news-item__title-link" href="#">C 26 по 31 октября в киноклубе «Эльдар» пройдет фестиваль «Музыкальные истории» к 100-летию студии Горького</a></h3>
-                <time class="news-item__date" datetime="2014-05-14">14.05.2014</time>
-                <p>C 26 по 31 октября в киноклубе «Эльдар» пройдет фестиваль «Музыкальные истории», посвящённый 100-летию киностудии им. М. Горького. Фестиваль «Музыкальные истории» - это три основных события: бесплатные кинопоказы «Прекрасное далёко», кинопортреты
-                  Мастеров и музыкальная программа в Большом зале. 26-30 октября - «Прекрасное далёко»</p>
-              </div>
-            </div>
-            <div class="right-news-item">
-              <div class="news-item__wrapper-image news-item__wrapper-image--small"><img class="news-item__image" src="pic/news/image-2-3.jpg" alt="">
-              </div>
-              <div class="news-item__wrapper">
-                <h3 class="news-item__title"><a class="news-item__title-link" href="#">Мировая премьера фильма Киностудии Горького «Буквальная геометрия» состоится 13 октября в ЦДК</a></h3>
-                <time class="news-item__date" datetime="2014-05-14">14.05.2014</time>
-                <p>Мировая премьера фильма Екатерины Еременко «Буквальная геометрия» состоится 13 октября в Центре документального кино в Москве. Фильм Киностудии им. М. Горького открывает изнанку предельно закрытого математического мира. Вместе с режиссером
-                  картину представит один из героев фильма, математик Александр Бобенко. В отечественный прокат фильм выйдет 14 октября, прокатчиком выступает Фестиваль актуального научного кино ФАНК при поддержке Киностудии им. М. Горького.</p>
-              </div>
-            </div>
-          </div><a href="#" class="news-all">Все новости</a>
-        </div>
-
-        <aside class="main-sidebar">
-          <h4><a class="main-sidebar__link main-sidebar__link--green" href="#">Реализованные проекты</a></h4>
-          <h4><a class="main-sidebar__link main-sidebar__link--purple" href="#">В производстве</a></h4>
-          <div class="main-sidebar__block-name-wrapper">
-            <h4 class="main-sidebar__block-name">Лучшие фильмы</h4>
-            <a href="#" class="main-sidebar__block-name-link">Все фильмы</a>
-          </div>
-          <div class="vertical-scroll-block">
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Дочь</a>
-                <span class="vertical-scroll-block__date">2013</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
-                <span class="vertical-scroll-block__date">2000</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Маленькая Вера</a>
-                <span class="vertical-scroll-block__date">1988</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Дочь</a>
-                <span class="vertical-scroll-block__date">2013</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
-                <span class="vertical-scroll-block__date">2000</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Маленькая Вера</a>
-                <span class="vertical-scroll-block__date">1988</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Дочь</a>
-                <span class="vertical-scroll-block__date">2013</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
-                <span class="vertical-scroll-block__date">2013</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Дочь</a>
-                <span class="vertical-scroll-block__date">2013</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
-                <span class="vertical-scroll-block__date">2000</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Маленькая Вера</a>
-                <span class="vertical-scroll-block__date">1988</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Дочь</a>
-                <span class="vertical-scroll-block__date">2013</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
-                <span class="vertical-scroll-block__date">2000</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Маленькая Вера</a>
-                <span class="vertical-scroll-block__date">1988</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Дочь</a>
-                <span class="vertical-scroll-block__date">2013</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
-                <span class="vertical-scroll-block__date">2013</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Дочь</a>
-                <span class="vertical-scroll-block__date">2013</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
-                <span class="vertical-scroll-block__date">2000</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Маленькая Вера</a>
-                <span class="vertical-scroll-block__date">1988</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Дочь</a>
-                <span class="vertical-scroll-block__date">2013</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
-                <span class="vertical-scroll-block__date">2000</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Маленькая Вера</a>
-                <span class="vertical-scroll-block__date">1988</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Дочь</a>
-                <span class="vertical-scroll-block__date">2013</span>
-              </div>
-            </div>
-            <div class="vertical-scroll-block__item">
-              <div>
-                <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
-                <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
-                <span class="vertical-scroll-block__date">2013</span>
-              </div>
-            </div>
-          </div>
-          <h4 class="main-sidebar__block-title">О студии</h4>
-          <div class="main-sidebar-content-block">
-            <img class="main-sidebar-content-block__image" src="img/logo.png" alt="#">
-            <p>В 2015 году Киностудия имени М. Горького отпразднует свой столетний юбилей.</p>
-            <p>К этой знаменательной дате киностудия готовит массу интересных событий и мероприятий. Планируется создать музей студии, организовать тематические выставки для школьников, мастер-классы для студентов театральных ВУЗов и экскурсии для всех,
-              кому близка и интересна тема российского кинематографа.</p>
-          </div>
-          <h4 class="main-sidebar__block-title">Наши лица</h4>
-          <div class="main-sidebar-image-gallery">
-            <a href="pic/gallery/image-4-1.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-1.jpg" alt="caption 1"></a>
-            <a href="pic/gallery/image-4-2.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-2.jpg" alt="caption 2"></a>
-            <a href="pic/gallery/image-4-3.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-3.jpg" alt="caption 3"></a>
-            <a href="pic/gallery/image-4-3.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-3.jpg" alt="caption 4"></a>
-            <a href="pic/gallery/image-4-1.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-1.jpg" alt="caption 5"></a>
-            <a href="pic/gallery/image-4-3.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-3.jpg" alt="caption 6"></a>
-            <a href="pic/gallery/image-4-2.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-2.jpg" alt="caption 7"></a>
-            <a href="pic/gallery/image-4-2.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-2.jpg" alt="caption 8"></a>
-            <a href="pic/gallery/image-4-1.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-1.jpg" alt="caption 9"></a>
-          </div>
-        </aside>
+      <div class="image-slider-menu-wrapper">
+        <nav class="menu">
+          <a class="menu__item menu__item--image" href="#">Павильоны</a>
+          <a class="menu__item menu__item--image" href="#">Помещения</a>
+          <a class="menu__item menu__item--image" href="#">Оборудование</a>
+          <a class="menu__item menu__item--image" href="#">Реквизит</a>
+          <a class="menu__item menu__item--image" href="#">Декорации</a>
+          <a class="menu__item menu__item--image" href="#">Постпродакшн</a>
+        </nav>
       </div>
-      <footer class="main-footer">
-        <div class="footer-first-row">
-          <form class="footer-search" action="" method="post">
-            <input class="footer-search__input" type="search" placeholder="Например, история">
-            <input class="footer-search__button" type="submit" value="Искать">
-          </form>
-          <div class="footer-contact">
-            <h5 class="footer-contact__title">Приемная генерального директора:</h5>
-            <span class="footer-contact__item">8 (499) 181-41-03</span>
-            <a class="footer-contact__item" href="mailto:secretary@gorkyfilm.ru">secretary@gorkyfilm.ru</a>
-          </div>
-          <div class="footer-contact">
-            <h5 class="footer-contact__title">Диспетчерская:</h5>
-            <span class="footer-contact__item">8 (499) 181-04-34</span>
-            <span class="footer-contact__item">8 (499) 181-03-59 (факс)</span>
-          </div>
-        </div>
-        <div class="footer-second-row">
-          <nav class="footer-menu">
-            <span class="footer-menu__wrapper-item"><a href="#" class="footer-menu__item footer-menu__item--first-item">Новости</a></span>
-            <span class="footer-menu__wrapper-item"><a href="#" class="footer-menu__item">Каталог фильмов</a></span>
-            <span class="footer-menu__wrapper-item"><a href="#" class="footer-menu__item">Кинотеатр</a></span>
-            <span class="footer-menu__wrapper-item"><a href="#" class="footer-menu__item">О киностудии</a></span>
-            <span class="footer-menu__wrapper-item"><a href="#" class="footer-menu__item">Проекты киностудии</a></span>
-            <span class="footer-menu__wrapper-item"><a href="#" class="footer-menu__item">Никфи</a></span>
-            <span class="footer-menu__wrapper-item"><a href="#" class="footer-menu__item">ЦНФ</a></span>
-            <span class="footer-menu__wrapper-item"><a href="#" class="footer-menu__item">Контакты</a></span>
-          </nav>
-          <div class="footer-social">
-            <a href="#" class="footer-social__item">Facebook</a>
-            <a href="#" class="made-by-name">Made with love in BY</a>
-          </div>
-        </div>
-        <div class="footer-third-row">
-          <span class="footer-copyright">&#169; Киностудия им. Горького</span>
-        </div>
-      </footer>
-
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.mCustomScrollbar.min.js"></script>
-    <script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+
+    <div class="content-slider-wrapper">
+      <div class="content-slider">
+        <div class="content-slider__item">Полина Гришина завоевала на «Кинотавре» приз за лучшую женскую роль в фильме "Спасение"<a href="#" class="content-slider__simple-link">Узнать больше</a><a href="#" class="content-slider__video-link">Смотреть онлайн</a>
+        </div>
+        <div class="content-slider__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, consectetur adipisicing elit <a href="#" class="content-slider__simple-link">Узнать больше</a><a href="#" class="content-slider__video-link">Смотреть онлайн</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-wrapper">
+      <!-- News -->
+      <div class="main-content">
+        <h2>Новости</h2>
+        <div class="news-item">
+          <div class="news-item__wrapper-image"><img class="news-item__image" src="pic/news/image-2-1.jpg" alt="">
+          </div>
+          <div class="news-item__wrapper">
+            <h3 class="news-item__title"><a class="news-item__title-link" href="#">Киностудия им. М. Горького монтирует «Спасение»</a></h3>
+            <time class="news-item__date" datetime="2014-05-14">14.05.2014</time>
+            <p> Большое жюри ежегодной Национальной Премии «Лавр»  в составе 50-ти профессионалов в области неигрового кино закончило свою работу. Стал известен шорт лист – тройки номинантов в каждой категории. Фильм Киностудии Горького "Буквальная геометрия" вышел в финал премии. Картина режиссера Екатерины Еременко вошла в шорт-лист фестиваля в номинации «Лучший научно-популярный, просветительский фильм». </p>
+          </div>
+        </div>
+        <div class="news-item">
+          <h3 class="news-item__title"><a class="news-item__title-link" href="#">Коллектив Киностудии Горького соболезнует родным и близким Эльдара Рязанова</a></h3>
+          <time class="news-item__date" datetime="2014-05-14">14.05.2014</time>
+          <p>Коллектив киностудии им. М. Горького и лично Сергей Анатольевич Зернов выражают искренние соболезнования семье Эльдара Александровича Рязанова, его родным и близким.</p>
+          <p>Мы скорбим о потере талантливого кинематографиста, непревзойденного мастера комедийного жанра, создавшего настоящие шедевры, на которых выросло не одно поколение. Эльдар Александрович был режиссером, внесшим неоценимый вклад в развитие отечественного кино, и его имя навсегда останется в истории. </p>
+        </div>
+        <div class="news-item">
+          <div class="left-news-item">
+            <div class="news-item__wrapper-image news-item__wrapper-image--small"><img class="news-item__image" src="pic/news/image-2-2.jpg" alt="">
+            </div>
+            <div class="news-item__wrapper">
+              <h3 class="news-item__title"><a class="news-item__title-link" href="#">C 26 по 31 октября в киноклубе «Эльдар» пройдет фестиваль «Музыкальные истории» к 100-летию студии Горького</a></h3>
+              <time class="news-item__date" datetime="2014-05-14">14.05.2014</time>
+              <p>C 26 по 31 октября в киноклубе «Эльдар» пройдет фестиваль «Музыкальные истории», посвящённый 100-летию киностудии им. М. Горького. Фестиваль «Музыкальные истории» - это три основных события: бесплатные кинопоказы «Прекрасное далёко», кинопортреты Мастеров и музыкальная программа в Большом зале. 26-30 октября - «Прекрасное далёко»</p>
+            </div>
+          </div>
+          <div class="right-news-item">
+            <div class="news-item__wrapper-image news-item__wrapper-image--small"><img class="news-item__image" src="pic/news/image-2-3.jpg" alt="">
+            </div>
+            <div class="news-item__wrapper">
+              <h3 class="news-item__title"><a class="news-item__title-link" href="#">Мировая премьера фильма Киностудии Горького «Буквальная геометрия» состоится 13 октября в ЦДК</a></h3>
+              <time class="news-item__date" datetime="2014-05-14">14.05.2014</time>
+              <p>Мировая премьера фильма Екатерины Еременко «Буквальная геометрия» состоится 13 октября в Центре документального кино в Москве. Фильм Киностудии им. М. Горького открывает изнанку предельно закрытого математического мира. Вместе с режиссером картину представит один из героев фильма, математик Александр Бобенко. В отечественный прокат фильм выйдет 14 октября, прокатчиком выступает Фестиваль актуального научного кино ФАНК при поддержке Киностудии им. М. Горького.</p>
+            </div>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-item__wrapper-image"><img class="news-item__image" src="pic/news/image-2-1.jpg" alt="">
+          </div>
+          <div class="news-item__wrapper">
+            <h3 class="news-item__title"><a class="news-item__title-link" href="#">Киностудия им. М. Горького монтирует «Спасение»</a></h3>
+            <time class="news-item__date" datetime="2014-05-14">14.05.2014</time>
+            <p> Большое жюри ежегодной Национальной Премии «Лавр»  в составе 50-ти профессионалов в области неигрового кино закончило свою работу. Стал известен шорт лист – тройки номинантов в каждой категории. Фильм Киностудии Горького "Буквальная геометрия" вышел в финал премии. Картина режиссера Екатерины Еременко вошла в шорт-лист фестиваля в номинации «Лучший научно-популярный, просветительский фильм». </p>
+          </div>
+        </div>
+        <div class="news-item">
+          <h3 class="news-item__title"><a class="news-item__title-link" href="#">Коллектив Киностудии Горького соболезнует родным и близким Эльдара Рязанова</a></h3>
+          <time class="news-item__date" datetime="2014-05-14">14.05.2014</time>
+          <p>Коллектив киностудии им. М. Горького и лично Сергей Анатольевич Зернов выражают искренние соболезнования семье Эльдара Александровича Рязанова, его родным и близким.</p>
+          <p>Мы скорбим о потере талантливого кинематографиста, непревзойденного мастера комедийного жанра, создавшего настоящие шедевры, на которых выросло не одно поколение. Эльдар Александрович был режиссером, внесшим неоценимый вклад в развитие отечественного кино, и его имя навсегда останется в истории. </p>
+        </div>
+        <div class="news-item">
+          <div class="left-news-item">
+            <div class="news-item__wrapper-image news-item__wrapper-image--small"><img class="news-item__image" src="pic/news/image-2-2.jpg" alt="">
+            </div>
+            <div class="news-item__wrapper">
+              <h3 class="news-item__title"><a class="news-item__title-link" href="#">C 26 по 31 октября в киноклубе «Эльдар» пройдет фестиваль «Музыкальные истории» к 100-летию студии Горького</a></h3>
+              <time class="news-item__date" datetime="2014-05-14">14.05.2014</time>
+              <p>C 26 по 31 октября в киноклубе «Эльдар» пройдет фестиваль «Музыкальные истории», посвящённый 100-летию киностудии им. М. Горького. Фестиваль «Музыкальные истории» - это три основных события: бесплатные кинопоказы «Прекрасное далёко», кинопортреты Мастеров и музыкальная программа в Большом зале. 26-30 октября - «Прекрасное далёко»</p>
+            </div>
+          </div>
+          <div class="right-news-item">
+            <div class="news-item__wrapper-image news-item__wrapper-image--small"><img class="news-item__image" src="pic/news/image-2-3.jpg" alt="">
+            </div>
+            <div class="news-item__wrapper">
+              <h3 class="news-item__title"><a class="news-item__title-link" href="#">Мировая премьера фильма Киностудии Горького «Буквальная геометрия» состоится 13 октября в ЦДК</a></h3>
+              <time class="news-item__date" datetime="2014-05-14">14.05.2014</time>
+              <p>Мировая премьера фильма Екатерины Еременко «Буквальная геометрия» состоится 13 октября в Центре документального кино в Москве. Фильм Киностудии им. М. Горького открывает изнанку предельно закрытого математического мира. Вместе с режиссером картину представит один из героев фильма, математик Александр Бобенко. В отечественный прокат фильм выйдет 14 октября, прокатчиком выступает Фестиваль актуального научного кино ФАНК при поддержке Киностудии им. М. Горького.</p>
+            </div>
+          </div>
+        </div><a href="#" class="news-all">Все новости</a>
+      </div>
+
+      <aside class="main-sidebar">
+        <h4><a class="main-sidebar__link main-sidebar__link--green" href="#">Реализованные проекты</a></h4>
+        <h4><a class="main-sidebar__link main-sidebar__link--purple" href="#">В производстве</a></h4>
+        <div class="main-sidebar__block-name-wrapper">
+          <h4 class="main-sidebar__block-name">Лучшие фильмы</h4>
+          <a href="#" class="main-sidebar__block-name-link">Все фильмы</a>
+        </div>
+        <div class="vertical-scroll-block">
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Дочь</a>
+              <span class="vertical-scroll-block__date">2013</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
+              <span class="vertical-scroll-block__date">2000</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Маленькая Вера</a>
+              <span class="vertical-scroll-block__date">1988</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Дочь</a>
+              <span class="vertical-scroll-block__date">2013</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
+              <span class="vertical-scroll-block__date">2000</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Маленькая Вера</a>
+              <span class="vertical-scroll-block__date">1988</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Дочь</a>
+              <span class="vertical-scroll-block__date">2013</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
+              <span class="vertical-scroll-block__date">2013</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Дочь</a>
+              <span class="vertical-scroll-block__date">2013</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
+              <span class="vertical-scroll-block__date">2000</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Маленькая Вера</a>
+              <span class="vertical-scroll-block__date">1988</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Дочь</a>
+              <span class="vertical-scroll-block__date">2013</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
+              <span class="vertical-scroll-block__date">2000</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Маленькая Вера</a>
+              <span class="vertical-scroll-block__date">1988</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Дочь</a>
+              <span class="vertical-scroll-block__date">2013</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
+              <span class="vertical-scroll-block__date">2013</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Дочь</a>
+              <span class="vertical-scroll-block__date">2013</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
+              <span class="vertical-scroll-block__date">2000</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Маленькая Вера</a>
+              <span class="vertical-scroll-block__date">1988</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Дочь</a>
+              <span class="vertical-scroll-block__date">2013</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
+              <span class="vertical-scroll-block__date">2000</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Маленькая Вера</a>
+              <span class="vertical-scroll-block__date">1988</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Дочь</a>
+              <span class="vertical-scroll-block__date">2013</span>
+            </div>
+          </div>
+          <div class="vertical-scroll-block__item">
+            <div>
+              <img src="pic/best-films/image-3-1.jpg" alt="" class="vertical-scroll-block__image">
+              <a class="vertical-scroll-block__title" href="#">Приходи на меня посмотреть</a>
+              <span class="vertical-scroll-block__date">2013</span>
+            </div>
+          </div>          
+        </div>
+        <h4 class="main-sidebar__block-title">О студии</h4>
+        <div class="main-sidebar-content-block">
+          <img class="main-sidebar-content-block__image" src="img/logo.png" alt="#">
+          <p>В 2015 году Киностудия имени М. Горького отпразднует свой столетний юбилей.</p>
+          <p>К этой знаменательной дате киностудия готовит массу интересных событий и мероприятий. Планируется создать музей студии, организовать тематические выставки для школьников, мастер-классы для студентов театральных ВУЗов и экскурсии для всех, кому близка и интересна тема российского кинематографа.</p>
+        </div>
+        <h4 class="main-sidebar__block-title">Наши лица</h4>
+        <div class="main-sidebar-image-gallery">
+          <a href="pic/gallery/image-4-1.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-1.jpg" alt="caption 1"></a>
+          <a href="pic/gallery/image-4-2.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-2.jpg" alt="caption 2"></a>
+          <a href="pic/gallery/image-4-3.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-3.jpg" alt="caption 3"></a>
+          <a href="pic/gallery/image-4-3.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-3.jpg" alt="caption 4"></a>
+          <a href="pic/gallery/image-4-1.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-1.jpg" alt="caption 5"></a>
+          <a href="pic/gallery/image-4-3.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-3.jpg" alt="caption 6"></a>
+          <a href="pic/gallery/image-4-2.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-2.jpg" alt="caption 7"></a>
+          <a href="pic/gallery/image-4-2.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-2.jpg" alt="caption 8"></a>
+          <a href="pic/gallery/image-4-1.jpg" class="main-sidebar-image-gallery__item" rel="group"><img class="main-sidebar-image-gallery__item-image" src="pic/gallery/image-4-1.jpg" alt="caption 9"></a>
+        </div>
+      </aside>
+    </div>
+    <footer class="main-footer">
+      <div class="footer-first-row">
+        <form class="footer-search" action="" method="post">
+          <input class="footer-search__input" type="search" placeholder="Например, история">
+          <input class="footer-search__button" type="submit" value="Искать">
+        </form>
+        <div class="footer-contact">
+          <h5 class="footer-contact__title">Приемная генерального директора:</h5>
+          <span class="footer-contact__item">8 (499) 181-41-03</span>
+          <a class="footer-contact__item" href="mailto:secretary@gorkyfilm.ru">secretary@gorkyfilm.ru</a>
+        </div>
+        <div class="footer-contact">
+          <h5 class="footer-contact__title">Диспетчерская:</h5>
+          <span class="footer-contact__item">8 (499) 181-04-34</span>
+          <span class="footer-contact__item">8 (499) 181-03-59 (факс)</span>
+        </div>
+      </div>
+      <div class="footer-second-row">
+        <nav class="footer-menu">
+          <span class="footer-menu__wrapper-item"><a href="#" class="footer-menu__item footer-menu__item--first-item">Новости</a></span>
+          <span class="footer-menu__wrapper-item"><a href="#" class="footer-menu__item">Каталог фильмов</a></span>
+          <span class="footer-menu__wrapper-item"><a href="#" class="footer-menu__item">Кинотеатр</a></span>
+          <span class="footer-menu__wrapper-item"><a href="#" class="footer-menu__item">О киностудии</a></span>
+          <span class="footer-menu__wrapper-item"><a href="#" class="footer-menu__item">Проекты киностудии</a></span>
+          <span class="footer-menu__wrapper-item"><a href="#" class="footer-menu__item">Никфи</a></span>
+          <span class="footer-menu__wrapper-item"><a href="#" class="footer-menu__item">ЦНФ</a></span>
+          <span class="footer-menu__wrapper-item"><a href="#" class="footer-menu__item">Контакты</a></span>
+        </nav>
+        <div class="footer-social">
+          <a href="#" class="footer-social__item">Facebook</a>
+          <a href="#" class="made-by-name">Made with love in BY</a>
+        </div>
+      </div>
+      <div class="footer-third-row">
+        <span class="footer-copyright">&#169; Киностудия им. Горького</span>
+      </div>
+    </footer>
+
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/main.js"></script>
+</body>
 
 </html>

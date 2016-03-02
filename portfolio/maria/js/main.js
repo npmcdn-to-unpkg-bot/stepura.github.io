@@ -3,6 +3,6 @@ $(document).ready(function() {
     	sectionSelector: '.pagesection__item',
     	scrollingSpeed: 1000,
     	navigation: true,
-    	navigationTooltips: ['qw', 'we']
+    	navigationTooltips: ['свадебное фото', 'портреты', 'love story']
     });
 });
