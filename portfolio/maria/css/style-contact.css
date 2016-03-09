@@ -30,7 +30,7 @@ body::before {
 }
 
 .contact__title {
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 	font-size: 3em;
 	line-height: 1em;
 	text-transform: lowercase;
