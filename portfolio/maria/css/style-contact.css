@@ -30,7 +30,7 @@ body::before {
 }
 
 .contact__title {
-	margin-bottom: 30px;
+	margin-bottom: 1em;
 	font-size: 3em;
 	line-height: 1em;
 	text-transform: lowercase;
@@ -39,7 +39,7 @@ body::before {
 .contact__hr {
 	width: 100px;
 	height: 1px;
-	margin: 20px auto;
+	margin: 1em auto;
 	background: #fff;
 }
 
@@ -54,7 +54,7 @@ body::before {
 }
 
 .contact__social a {
-	margin-left: 50px;
+	margin-left: 4em;
 }
 
 .contact__social a:first-child {
