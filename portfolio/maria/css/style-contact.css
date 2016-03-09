@@ -22,7 +22,7 @@ body::before {
 	top: 50%;
 	width: 100%;
 	font-size: 1.7em;
-	line-height: 2em;
+	line-height: 1.2em;
 	transform: translate(0, -50%);
 	color: #fff;
 	text-align: center;
@@ -30,7 +30,7 @@ body::before {
 }
 
 .contact__title {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	font-size: 3em;
 	line-height: 1em;
 	text-transform: lowercase;
