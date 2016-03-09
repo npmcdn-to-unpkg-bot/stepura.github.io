@@ -1,4 +1,5 @@
 .header--nofixed {
+	position: relative;
 }
 
 .header__gallery {
