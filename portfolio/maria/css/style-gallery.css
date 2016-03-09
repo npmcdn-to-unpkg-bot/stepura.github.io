@@ -1,25 +1,44 @@
 .header--nofixed {
-	position: relative;
+	position: static;
 }
+
+.blurImg {
+  position: relative;
+  width: 100%;
+  height: 440px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.blurImg > div {
+  position: fixed;
+  width: 100%;
+  height: 440px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.blur {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
+
+
+
+
+
+
+
 
 .header__gallery {
 height: 700px;
-position: fixed;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
 background: url(../pic/1.jpg) no-repeat center center;
 background-size: cover;
 width: 100%;
-z-index: -1;
-}
-
-.header__gallery-dark {
-	position: relative;
-	background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.3));
-	width: 100%;
-	height: 100%;
 }
 
 .header__gallery-title {
@@ -46,7 +65,7 @@ z-index: -1;
 }
 
 .wrapper-grid {
-	top: 700px;
+	top: 440px;
   position: relative;
   background: #fff;
 	z-index: 500;
@@ -102,9 +121,9 @@ z-index: -1;
 
 
 @media screen and (max-width: 1366px) {
-	.header__gallery { height: 500px; }
+	.header__gallery { height: 440px; }
 	.header__gallery-title { font-size: 45px; }
-	.wrapper-grid { top: 500px; }
+	.wrapper-grid { top: 0px; }
   .grid-item { width: 33.333%; padding: 12px; }
 }
 
