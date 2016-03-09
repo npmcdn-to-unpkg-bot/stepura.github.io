@@ -1,0 +1,122 @@
+.header--nofixed {
+  overflow: hidden;
+}
+
+.header__gallery {
+height: 700px;
+position: fixed;
+top: 0;
+left: 0;
+background: url(../pic/1.jpg);
+background-size: cover;
+width: 100%;
+z-index: -1;
+}
+
+.header__gallery-dark {
+	position: relative;
+	background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.3));
+	width: 100%;
+	height: 100%;
+}
+
+.header__gallery-title {
+	position: absolute;
+	bottom: 10%;
+	width: 100%;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 900;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.8);
+}
+
+.wrapper-grid::before {
+	position: absolute;
+	top: -20px;
+	left: 0;
+	content: '';
+	height: 20px;
+	width: 100%;
+	background: url(../img/border-horiz.svg) repeat-x 100% 100%;
+	transform: rotate(180deg);
+}
+
+.wrapper-grid {
+	top: 700px;
+  position: relative;
+  background: #fff;
+	z-index: 500;
+	width: 100%;
+	padding-bottom: 100px;
+}
+
+.grid {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.grid-item { 
+	width: 25%;
+	padding: 15px;
+	transition: .2s;
+}
+
+.grid-item img {
+  max-width: 100%;
+  vertical-align: bottom;
+  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.24), 0 4px 16px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid-item img:hover {
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+
+
+.back-to-top {
+	display: none;
+	height: 40px;
+  width: 40px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	bottom: 30px;
+  right: 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+	overflow: hidden;
+  background: rgba(232, 98, 86, 0.8) url(../img/top-arrow.svg) no-repeat center 50%;
+  transition: opacity .3s;
+  border-radius: 50%;
+}
+.back-to-top:hover {
+	background-color: #000;
+}
+
+
+@media screen and (max-width: 1366px) {
+	.header__gallery { height: 500px; }
+	.header__gallery-title { font-size: 45px; }
+	.wrapper-grid { top: 500px; }
+  .grid-item { width: 33.333%; padding: 12px; }
+}
+
+@media screen and (max-width: 700px) {
+	.header__gallery { height: 300px; }
+	.header__gallery-title { font-size: 30px; }
+	.wrapper-grid { top: 300px; }
+  .grid-item { width: 50%; padding: 10px; }
+}
+
+
+@media screen and (max-width: 480px) {
+	.header__gallery { height: 200px; }
+	.header__gallery-title { font-size: 15px; }
+	.wrapper-grid { top: 200px; }
+  .grid-item { width: 100%; padding: 15px; }
+}

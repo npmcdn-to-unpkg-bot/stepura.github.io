@@ -1,11 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Amatic+SC&subset=latin,cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Great+Vibes&subset=latin,cyrillic);
 
 *, *::before, *::after {
 	box-sizing: border-box;
 }
 
 body {
-	font: 12px 'Open Sans', sans-serif;
+	font: 12px 'Open Sans Condensed', sans-serif;
 }
 
 h1 {
@@ -33,31 +33,30 @@ h1 {
 
 .header__logo-link {
 	display: block;
-	font: 42px/42px 'Amatic SC', sans-serif;
+	font: 42px/42px 'Great Vibes', cursive;
 	text-decoration: none;
 	color: #fff;
-	text-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.5);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 	transition: .2s;
 }
 
 .header__logo-link:hover {
-	border-bottom: 1px solid #fff;
-	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-	padding-bottom: 2px;
+	text-decoration: underline;
 }
 
 .header__nav {
 	float: right;
+	line-height: 42px;
 	text-align: right;
 }
 
 .header__nav-item {
 	margin-left: 25px;
-	font-size: 14px;
+	font-size: 20px;
 	color: #fff;
 	text-transform: uppercase;
 	text-decoration: none;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .header__nav-item:hover {
@@ -89,9 +88,31 @@ h1 {
 	color: #fff;
 	font-size: 3em;
 	margin-left: 50px;
+	text-transform: uppercase;
 	transition: .5s;
 	transition-delay: .5s;
+	position: relative;
 }
+
+.pagesection__btn {
+	font-size: 0.4em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #fff;
+	background: #ef4138;
+}
+
+.pagesection__btn:hover i {
+	padding-left: 15px;
+}
+
+.pagesection__btn i {
+	padding-left: 5px;
+	transition: .3s;
+}
+
 
 .pagesection__item.active p {
 	margin-left: 70px;
@@ -225,16 +246,14 @@ border-radius: 100%;
 }
 
 .callme__mynumber {
-	font-size: 14px;
+	font-size: 20px;
 	color: #fff;
 	text-decoration: none;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-	transition: .2s;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .callme__mynumber:hover {
-	border-bottom: 1px solid #fff;
-	box-shadow: 0 1px 0 rgba(1, 0, 0, 0.5);
+	text-decoration: underline;
 }
 
 .follow {
@@ -249,7 +268,6 @@ border-radius: 100%;
   text-align: center;
   color: #6f6f6f;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
   display: inline-block;
   margin: 0 5px;
   position: relative;
@@ -258,6 +276,8 @@ border-radius: 100%;
   font-size: 12px;
   vertical-align: bottom;
   transition: all 0.3s ease-out;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .follow__entry:last-child {
@@ -307,6 +327,27 @@ border-radius: 100%;
   background: #fff;
 }
 
+.follow__entry:hover .fa-instagram {
+	color: #125688;
+}
+
+.follow__entry:hover .fa-facebook {
+	color: #45619D;
+}
+
+.follow__entry:hover .fa-vk {
+	color: #597B9F;
+}
+
+.follow__entry:hover .fa-envelope-o {
+	color: #DA4A38;
+}
+
+
+
+
+
+
 @media screen and (max-width: 700px) {
 	.header {
 		padding: 30px 45px 0; 
@@ -321,6 +362,33 @@ border-radius: 100%;
 		font-size: 12px;
 	}
 	
+	.pagesection__frames div:nth-of-type(1),
+	.pagesection__frames div:nth-of-type(2),
+	.pagesection__frames div:nth-of-type(3),
+	.pagesection__frames div:nth-of-type(4) {
+	background-position: 100% 100%;
+	}
+
+	.pagesection__corners div::before,
+	.pagesection__corners div::after {
+		left: 5px;
+		top: 6px;
+	}
+
+	.pagesection__corners div:nth-child(1)::after {
+		right: 5px;
+		top: 6px;
+	}
+
+	.pagesection__corners div:nth-child(2)::before {
+		right: 5px;
+		bottom: 6px;
+	}
+
+	.pagesection__corners div:nth-child(2)::after {
+		bottom: 6px;
+	}
+
 	#fp-nav {
 		margin-right: 20px;
 	}
@@ -332,6 +400,7 @@ border-radius: 100%;
 	.follow__entry {
 		width: 24px;
 		height: 24px;
+		margin: 0 3px;
 	}
 
 	.follow .fa {
@@ -349,13 +418,19 @@ border-radius: 100%;
 		font-size: 24px;
 		line-height: 24px;
 	}
+	
+	.header__nav {
+		line-height: 24px;
+	}
 
 	.header__nav-item {
 		font-size: 10px;
+		line-height: 24px;
+		margin-left: 8px;
 	}
 	
 	#fp-nav {
-		margin-right: 0px;
+		margin-right: 0;
 	}
 
 	.footer {
@@ -369,6 +444,7 @@ border-radius: 100%;
 	.follow__entry {
 		width: 20px;
 		height: 20px;
+		margin: 0 2px;
 	}
 
 	.follow .fa {
