@@ -4,7 +4,7 @@ body {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: url(../pic/4.jpg) no-repeat center center fixed;
+	background: url(../pic/4.jpg) no-repeat center center;
 	background-size: cover;
 }
 
