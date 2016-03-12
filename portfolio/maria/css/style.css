@@ -25,6 +25,7 @@ h1, h2 {
 	right: 0;
 	padding: 50px 70px 0;
 	transition: .2s;
+	z-index:500;
 }
 
 .header__logo {
