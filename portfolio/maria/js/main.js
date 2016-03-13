@@ -7,14 +7,14 @@ $(document).ready(function() {
     });
   });
 
-$('.grid').masonry({
+//$('.grid').masonry({
   // set itemSelector so .grid-sizer is not used in layout
-  itemSelector: '.grid-item',
+//  itemSelector: '.grid-item',
   // use element for option
-  columnWidth: '.grid-item',
-  percentPosition: true,
-  gutter: 0
-})
+ // columnWidth: '.grid-item',
+ // percentPosition: true,
+  //gutter: 0
+//})
 
 var amountScrolled = 200;
 
@@ -32,3 +32,16 @@ $('a.back-to-top, a.simple-back-to-top').click(function() {
 	}, 700);
 	return false;
 });
+
+$(window).load(function() {
+var container = document.querySelector('.grid');
+var msnry = new Masonry( container, {
+  itemSelector: '.grid-item',
+  // use element for option
+  columnWidth: '.grid-item',
+  percentPosition: true,
+  gutter: 0
+}).imagesLoaded(function() {
+$('.grid').masonry('reload');
+});
+}); 
