@@ -5,19 +5,23 @@ $(document).ready(function() {
     	navigation: true,
     	navigationTooltips: ['свадебная фотография', 'love story', 'портрет', 'студийная фотография']
     });
+  });
 
-    $('.grid').masonry({
-  // set itemSelector so .grid-sizer is not used in layout
+$(document).ready(function() {
+
+  // Initialize Masonry
+  $('.grid').masonry({
+      // set itemSelector so .grid-sizer is not used in layout
   itemSelector: '.grid-item',
   // use element for option
   columnWidth: '.grid-item',
   percentPosition: true,
   gutter: 0
-}).imagesLoaded(function() {
+  }).imagesLoaded(function() {
     $(this).masonry('reload');
   });
 
-  });
+});
 
 var amountScrolled = 200;
 
