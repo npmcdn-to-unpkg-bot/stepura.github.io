@@ -1,282 +1,297 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Great+Vibes&subset=latin,cyrillic);
 
-*, *::before, *::after {
-	box-sizing: border-box;
+/*** MAIN ***/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-	font: 12px 'Open Sans Condensed', sans-serif;
+  font: 12px 'Open Sans Condensed', sans-serif;
 }
 
-h1, h2 {
-	font-size: 12px;
-	margin: 0;
+h1,
+h2 {
+  font-size: 12px;
+  margin: 0;
 }
 
 
-
-/* 
- * Header
- */
+/*** HEADER ***/
 
 .header {
-	position: fixed;
-	left: 0;
-	right: 0;
-	padding: 50px 70px 0;
-	transition: .2s;
-	z-index:500;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 50px 70px 0;
+  z-index: 1;
+  transition: .2s;
 }
 
 .header__logo {
-	float: left;
+  float: left;
 }
 
 .header__logo-link {
-	display: block;
-	font: 2.5em/1em 'Great Vibes', cursive;
-	text-decoration: none;
-	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-	transition: .2s;
+  display: block;
+  font: bold 2.5em/1em 'Great Vibes', cursive;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000;
+  color: #fff;
 }
 
 .header__logo-link:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .header__nav {
-	float: right;
-	text-align: right;
+  float: right;
+  text-align: right;
 }
 
 .header__nav-item {
-	margin-left: 25px;
-	font-size: 1.4em;
-	line-height: 1em;
-	color: #fff;
-	text-transform: uppercase;
-	text-decoration: none;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin-left: 25px;
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000;
+  color: #fff;
 }
 
 .header__nav-item:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
+
+
+/*** PAGE SECTIONS ***/
+
+
+/*** PAGE SECTIONS backgrounds ***/
 
 .pagesection__item {
-	background-size: cover;
-}
-
-.pagesection__item:nth-of-type(1) {
-	background-image: url(../pic/1.jpg);
+  background-image: url(../pic/homepage/2560/wedding.jpg);
+  background-size: cover;
 }
 
 .pagesection__item:nth-of-type(2) {
-	background-image: url(../pic/2.jpg);
+  background-image: url(../pic/homepage/2560/lovestory.jpg);
 }
 
 .pagesection__item:nth-of-type(3) {
-	background-image: url(../pic/3.jpg);
+  background-image: url(../pic/homepage/2560/portrait.jpg);
 }
 
 .pagesection__item:nth-of-type(4) {
-	background-image: url(../pic/4.jpg);
-}
-
-.pagesection__item p {
-	color: #fff;
-	font-size: 3em;
-	margin-left: 50px;
-	text-transform: uppercase;
-	transition: .5s;
-	transition-delay: .5s;
-	position: relative;
-}
-
-.pagesection__btn {
-	font-size: 0.4em;
-	font-weight: bold;
-	letter-spacing: 1px;
-	padding: 10px 20px;
-	text-decoration: none;
-	color: #fff;
-	background: #ef4138;
-}
-
-.pagesection__btn:hover i {
-	padding-left: 15px;
-}
-
-.pagesection__btn i {
-	padding-left: 5px;
-	transition: .3s;
+  background-image: url(../pic/homepage/2560/studio.jpg);
 }
 
 
-.pagesection__item.active p {
-	margin-left: 70px;
-}
+/*** PAGE SECTIONS second background ***/
 
 .fp-tableCell {
-	width: 100%;
-	height: 100%;
-	background-color: rgba(17, 17, 17, 0.9);
-	transition: all 0.7s cubic-bezier(.2,.1,.3,1.0);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.9);
+  transition: all 0.7s cubic-bezier(.2, .1, .3, 1.0);
 }
 
 .active .fp-tableCell {
-	background-color: rgba(17, 17, 17, 0.1);
-}
-
-/*******  Navigation Slider ***********/
-#fp-nav {
-	margin-right: 45px;
-	transition: .2s;
-}
-
-#fp-nav ul li a span {
-	background: #fff;
-	transition: all .2s;
-	transition-delay: .1s;
-}
-
-#fp-nav ul li a.active span {
-	height: 12px;
-width: 12px;
-background: transparent;
-border: solid 2px #fff;
-margin: -5px 0 0 -6px;
-border-radius: 100%;
+  background-color: rgba(17, 17, 17, 0);
 }
 
 
+/*** PAGE SECTIONS border ***/
 
 .pagesection__frames,
 .pagesection__corners {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
 }
 
 .pagesection__frames div {
-	position: absolute;
+  position: absolute;
 }
 
 .pagesection__frames div:nth-of-type(1) {
-	width: 100%;
-	height: 20px;
-	top: 0;
-	background: url(../img/border-horiz.svg) 50% 65%;
+  top: 0;
+  width: 100%;
+  height: 20px;
+  background: url(../img/border-horiz.svg) 50% 65%;
 }
 
 .pagesection__frames div:nth-of-type(2),
 .pagesection__frames div:nth-of-type(4) {
-	width: 20px;
-	height: 100%;
-	background: url(../img/border-vert.svg) 65% 50%;
+  width: 20px;
+  height: 100%;
+  background: url(../img/border-vert.svg) 65% 50%;
 }
 
 .pagesection__frames div:nth-of-type(3) {
-	width: 100%;
-	height: 20px;
-	background: url(../img/border-horiz.svg) 50% 65%;
-	bottom: 0;
-	transform: rotate(180deg);
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background: url(../img/border-horiz.svg) 50% 65%;
+  transform: rotate(180deg);
 }
 
 .pagesection__frames div:nth-of-type(4) {
-	right: 0;
-	transform: rotate(180deg);
+  right: 0;
+  transform: rotate(180deg);
 }
 
 .pagesection__corners div::before,
 .pagesection__corners div::after {
-	content: '';
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	left: 10px;
-	top: 12px;
-	background: url(../img/corner.svg) no-repeat center center;
+  content: '';
+  top: 12px;
+  left: 10px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url(../img/corner.svg) no-repeat center center;
 }
 
 .pagesection__corners div:nth-child(1)::after {
-	left: auto;
-	right: 10px;
-	top: 12px;
-	transform: rotate(90deg);
+  top: 12px;
+  right: 10px;
+  left: auto;
+  transform: rotate(90deg);
 }
 
 .pagesection__corners div:nth-child(2)::before {
-	left: auto;
-	right: 10px;
-	top: auto;
-	bottom: 12px;
-	transform: rotate(180deg);
+  top: auto;
+  right: 10px;
+  bottom: 12px;
+  left: auto;
+  transform: rotate(180deg);
 }
 
 .pagesection__corners div:nth-child(2)::after {
-	top: auto;
-	bottom: 12px;
-	transform: rotate(270deg);
+  top: auto;
+  bottom: 12px;
+  transform: rotate(270deg);
 }
 
 
+/*** PAGE SECTIONS pagination ***/
+
+#fp-nav {
+  margin-right: 45px;
+  transition: .2s;
+}
+
+#fp-nav ul li a span {
+  background: #fff;
+  transition: all .2s;
+  transition-delay: .1s;
+}
+
+#fp-nav ul li a.active span {
+  margin: -5px 0 0 -6px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  background: transparent;
+}
+
+.fp-tooltip.right {
+  padding: 0 5px;
+  color: #fff !important;
+  background: #ef4138;
+}
 
 
+/*** PAGE SECTIONS content ***/
 
+.pagesection__item .pagesection__title {
+  position: relative;
+  margin-left: 20px;
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  transition: .5s;
+  transition-delay: .5s;
+}
+
+.pagesection__btn {
+  padding: 10px 20px;
+  font-size: 0.4em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+  background: #ef4138;
+}
+
+.pagesection__btn:hover i {
+  padding-left: 15px;
+}
+
+.pagesection__btn i {
+  padding-left: 5px;
+  transition: .3s;
+}
+
+.pagesection__item.active .pagesection__title {
+  margin-left: 70px;
+}
+
+
+/*** FOOTER ***/
 
 .footer {
-	width: 100%;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	padding: 0 70px 50px;
-	z-index: 2;
-	transition: .2s;
+  position: fixed;
+  padding: 0 70px 50px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  transition: .2s;
 }
 
 .callme {
-	float: left;
-	color: #fff;
-	text-decoration: none;
+  float: left;
 }
 
 .callme__mynumber {
-	font-size: 1.4em;
-	color: #fff;
-	text-decoration: none;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 1.4em;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000;
+  color: #fff;
 }
 
 .callme__mynumber:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .follow {
-	float: right;
+  float: right;
   font-size: 0;
   text-align: right;
 }
 
 .follow__entry {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  color: #6f6f6f;
-  border-radius: 50%;
+  position: relative;
   display: inline-block;
   margin: 0 5px;
-  position: relative;
+  width: 30px;
+  height: 30px;
   border: 1px transparent solid;
-  background: #111;
+  border-radius: 50%;
   font-size: 12px;
+  text-align: center;
+  box-shadow: 1px 1px 1px #000;
   vertical-align: bottom;
+  color: #6f6f6f;
+  background: #111;
   transition: all 0.3s ease-out;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .follow__entry:last-child {
@@ -288,24 +303,21 @@ border-radius: 100%;
   line-height: 28px;
 }
 
-.follow__entry:before {
+.follow__entry::before {
+  content: "";
   position: absolute;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
   left: -2px;
   top: -2px;
   right: -2px;
   bottom: -2px;
-  content: "";
-  background: #fff;
+  border-radius: 50%;
   transform: scale(0);
-  -webkit-transform: scale(0);
+  background: #fff;
   transition: all 0.15s ease-out;
 }
 
-.follow__entry:hover:before {
+.follow__entry:hover::before {
   transform: scale(1);
-  -webkit-transform: scale(1);
 }
 
 .follow__entry:hover {
@@ -313,129 +325,183 @@ border-radius: 100%;
 }
 
 .follow__entry {
-  color: rgba(255, 255, 255, 1);
+  border-color: #fff;
+  color: #fff;
   background: none;
-  border-color: rgba(255, 255, 255, 1);
 }
 
 .follow__entry:hover {
   color: #222;
 }
 
-.follow__entry:before {
+.follow__entry::before {
   background: #fff;
 }
 
 .follow__entry:hover .fa-instagram {
-	color: #125688;
+  color: #125688;
 }
 
 .follow__entry:hover .fa-facebook {
-	color: #45619D;
+  color: #45619D;
 }
 
 .follow__entry:hover .fa-vk {
-	color: #597B9F;
+  color: #597B9F;
 }
 
 .follow__entry:hover .fa-envelope-o {
-	color: #DA4A38;
+  color: #DA4A38;
 }
 
 
+/*** MEDIA 1920 ***/
+
+@media screen and (max-width: 1920px) {
+  .pagesection__item {
+    background-image: url(../pic/homepage/1920/wedding.jpg);
+  }
+  .pagesection__item:nth-of-type(2) {
+    background-image: url(../pic/homepage/1920/lovestory.jpg);
+  }
+  .pagesection__item:nth-of-type(3) {
+    background-image: url(../pic/homepage/1920/portrait.jpg);
+  }
+  .pagesection__item:nth-of-type(4) {
+    background-image: url(../pic/homepage/1920/studio.jpg);
+  }
+}
 
 
+/*** MEDIA 1366 ***/
 
+@media screen and (max-width: 1366px) {
+  .pagesection__item {
+    background-image: url(../pic/homepage/1366/wedding.jpg);
+  }
+  .pagesection__item:nth-of-type(2) {
+    background-image: url(../pic/homepage/1366/lovestory.jpg);
+  }
+  .pagesection__item:nth-of-type(3) {
+    background-image: url(../pic/homepage/1366/portrait.jpg);
+  }
+  .pagesection__item:nth-of-type(4) {
+    background-image: url(../pic/homepage/1366/studio.jpg);
+  }
+}
+
+
+/*** MEDIA 700 ***/
 
 @media screen and (max-width: 700px) {
-	body {
-		font-size: 10px;
-	}
-
-	.header {
-		padding: 30px 45px 0; 
-	}
-	
-	.pagesection__frames div:nth-of-type(1),
-	.pagesection__frames div:nth-of-type(2),
-	.pagesection__frames div:nth-of-type(3),
-	.pagesection__frames div:nth-of-type(4) {
-	background-position: 100% 100%;
-	}
-
-	.pagesection__corners div::before,
-	.pagesection__corners div::after {
-		left: 5px;
-		top: 6px;
-	}
-
-	.pagesection__corners div:nth-child(1)::after {
-		right: 5px;
-		top: 6px;
-	}
-
-	.pagesection__corners div:nth-child(2)::before {
-		right: 5px;
-		bottom: 6px;
-	}
-
-	.pagesection__corners div:nth-child(2)::after {
-		bottom: 6px;
-	}
-
-	#fp-nav {
-		margin-right: 20px;
-	}
-
-	.footer {
-		padding: 0 45px 30px;
-	}
-	
-	.follow__entry {
-		width: 24px;
-		height: 24px;
-		margin: 0 3px;
-	}
-
-	.follow .fa {
-		font-size: 11px;
-		line-height: 22px;
-	}
+  body {
+    font-size: 10px;
+  }
+  .header {
+    padding: 30px 45px 0;
+  }
+  .pagesection__item {
+    background-image: url(../pic/homepage/700/wedding.jpg);
+  }
+  .pagesection__item:nth-of-type(2) {
+    background-image: url(../pic/homepage/700/lovestory.jpg);
+  }
+  .pagesection__item:nth-of-type(3) {
+    background-image: url(../pic/homepage/700/portrait.jpg);
+  }
+  .pagesection__item:nth-of-type(4) {
+    background-image: url(../pic/homepage/700/studio.jpg);
+  }
+  .pagesection__frames div:nth-of-type(1),
+  .pagesection__frames div:nth-of-type(2),
+  .pagesection__frames div:nth-of-type(3),
+  .pagesection__frames div:nth-of-type(4) {
+    background-position: 100% 100%;
+  }
+  .pagesection__corners div::before,
+  .pagesection__corners div::after {
+    left: 5px;
+    top: 6px;
+  }
+  .pagesection__corners div:nth-child(1)::after {
+    right: 5px;
+    top: 6px;
+  }
+  .pagesection__corners div:nth-child(2)::before {
+    right: 5px;
+    bottom: 6px;
+  }
+  .pagesection__corners div:nth-child(2)::after {
+    bottom: 6px;
+  }
+  #fp-nav {
+    margin-right: 20px;
+  }
+  .pagesection__item.active .pagesection__title {
+    margin-left: 45px;
+  }
+  .footer {
+    padding: 0 45px 30px;
+  }
+  .follow__entry {
+    width: 24px;
+    height: 24px;
+    margin: 0 3px;
+  }
+  .follow .fa {
+    font-size: 11px;
+    line-height: 22px;
+  }
 }
 
+
+/*** MEDIA 480 ***/
+
 @media screen and (max-width: 480px) {
-	body {
-		font-size: 8px;
-	}
-
-	.header {
-		padding: 20px 25px 0; 
-	}
-
-	.header__nav-item {
-		margin-left: 8px;
-	}
-	
-	#fp-nav {
-		margin-right: 0;
-	}
-
-	.footer {
-		padding: 0 25px 15px;
-	}
-	
-	.callme__mynumber {
-		font-size: 11px;
-	}
-
-	.follow__entry {
-		width: 20px;
-		height: 20px;
-		margin: 0 2px;
-	}
-
-	.follow .fa {
-		font-size: 10px;
-		line-height: 18px;
-	}
+  body {
+    font-size: 8px;
+  }
+  .header {
+    padding: 20px 25px 0;
+  }
+  .pagesection__item {
+    background-image: url(../pic/homepage/480/wedding.jpg);
+  }
+  .pagesection__item:nth-of-type(2) {
+    background-image: url(../pic/homepage/480/lovestory.jpg);
+  }
+  .pagesection__item:nth-of-type(3) {
+    background-image: url(../pic/homepage/480/portrait.jpg);
+  }
+  .pagesection__item:nth-of-type(4) {
+    background-image: url(../pic/homepage/480/studio.jpg);
+  }
+  .header__nav-item {
+    margin-left: 8px;
+  }
+  #fp-nav {
+    margin-right: 0;
+  }
+  .pagesection__item.active .pagesection__title {
+    width: 70%;
+    margin-left: 5px;
+  }
+  .pagesection__item.active .pagesection__title {
+    margin-left: 25px;
+  }
+  .footer {
+    padding: 0 25px 15px;
+  }
+  .callme__mynumber {
+    font-size: 11px;
+  }
+  .follow__entry {
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+  }
+  .follow .fa {
+    font-size: 10px;
+    line-height: 18px;
+  }
 }
