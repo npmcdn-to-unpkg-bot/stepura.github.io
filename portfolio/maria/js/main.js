@@ -7,21 +7,14 @@ $(document).ready(function() {
     });
   });
 
-$(document).ready(function() {
-
-  // Initialize Masonry
-  $('.grid').masonry({
-      // set itemSelector so .grid-sizer is not used in layout
+$('.grid').masonry({
+  // set itemSelector so .grid-sizer is not used in layout
   itemSelector: '.grid-item',
   // use element for option
   columnWidth: '.grid-item',
   percentPosition: true,
   gutter: 0
-  }).imagesLoaded(function() {
-    $(this).masonry('reload');
-  });
-
-});
+})
 
 var amountScrolled = 200;
 
