@@ -14,7 +14,9 @@ $('.grid').masonry({
   columnWidth: '.grid-item',
   percentPosition: true,
   gutter: 0
-})
+}).imagesLoaded(function() {
+    $(this).masonry('reload');
+  });
 
 var amountScrolled = 200;
 
