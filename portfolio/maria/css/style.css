@@ -1,110 +1,111 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Great+Vibes&subset=latin,cyrillic);
 
+
 /*** MAIN ***/
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+*, *::before, *::after {
+	box-sizing: border-box;
 }
 
 body {
-  font: 12px 'Open Sans Condensed', sans-serif;
-  background: #111;
+	font: 12px 'Open Sans Condensed', sans-serif;
 }
 
-h1,
-h2 {
-  font-size: 12px;
-  margin: 0;
+h1, h2 {
+	font-size: 12px;
+	margin: 0;
 }
 
 
 /*** HEADER ***/
 
 .header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  padding: 50px 70px 0;
-  z-index: 1;
-  transition: .2s;
+	position: fixed;
+	left: 0;
+	right: 0;
+	padding: 50px 70px 0;
+	z-index: 1;
+	transition: .2s;
 }
 
 .header__logo {
-  float: left;
+	float: left;
 }
 
 .header__logo-link {
-  display: block;
-  font: bold 2.5em/1em 'Great Vibes', cursive;
-  text-decoration: none;
-  text-shadow: 1px 1px 1px #000;
-  color: #fff;
+	display: block;
+	font: bold 2.5em/1em 'Great Vibes', cursive;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #000;
+	color: #fff;
 }
 
 .header__logo-link:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .header__nav {
-  float: right;
-  text-align: right;
+	float: right;
+	text-align: right;
 }
 
 .header__nav-item {
-  margin-left: 25px;
-  font-size: 1.4em;
-  font-weight: bold;
-  line-height: 1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-shadow: 1px 1px 1px #000;
-  color: #fff;
+	margin-left: 25px;
+	font-size: 1.4em;
+	font-weight: bold;
+	line-height: 1em;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #000;
+	color: #fff;
 }
 
 .header__nav-item:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 
 /*** PAGE SECTIONS ***/
-
-
 /*** PAGE SECTIONS backgrounds ***/
 
 .pagesection__item {
-  background: url(../pic/homepage/2560/wedding.jpg) no-repeat center center;
-  background-size: 100% auto;
+	background: url(../pic/homepage/2560/wedding.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .pagesection__item:nth-of-type(2) {
-  background: url(../pic/homepage/2560/lovestory.jpg) no-repeat center center;
-  background-size: 100% auto;
+	background: url(../pic/homepage/2560/lovestory.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .pagesection__item:nth-of-type(3) {
-  background: url(../pic/homepage/2560/portrait.jpg) no-repeat center center;
-  background-size: 100% auto;
+	background: url(../pic/homepage/2560/portrait.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .pagesection__item:nth-of-type(4) {
-  background: url(../pic/homepage/2560/studio.jpg) no-repeat center center;
-  background-size: auto 100%;
+	background: url(../pic/homepage/2560/studio.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 
 /*** PAGE SECTIONS second background ***/
 
 .fp-tableCell {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(17, 17, 17, 0.9);
-  transition: all 0.7s cubic-bezier(.2, .1, .3, 1.0);
+	width: 100%;
+	height: 100%;
+	background-color: rgba(17, 17, 17, 0.9);
+	transition: all 0.7s cubic-bezier(.2,.1,.3,1.0);
 }
 
 .active .fp-tableCell {
-  background-color: rgba(17, 17, 17, 0);
+	background-color: rgba(17, 17, 17, 0);
 }
 
 
@@ -112,187 +113,186 @@ h2 {
 
 .pagesection__frames,
 .pagesection__corners {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
 }
 
 .pagesection__frames div {
-  position: absolute;
+	position: absolute;
 }
 
 .pagesection__frames div:nth-of-type(1) {
-  top: 0;
-  width: 100%;
-  height: 20px;
-  background: url(../img/border-horiz.svg) 50% 65%;
+	top: 0;
+	width: 100%;
+	height: 20px;
+	background: url(../img/border-horiz.svg) 50% 65%;
 }
 
 .pagesection__frames div:nth-of-type(2),
 .pagesection__frames div:nth-of-type(4) {
-  width: 20px;
-  height: 100%;
-  background: url(../img/border-vert.svg) 65% 50%;
+	width: 20px;
+	height: 100%;
+	background: url(../img/border-vert.svg) 65% 50%;
 }
 
 .pagesection__frames div:nth-of-type(3) {
-  bottom: 0;
-  width: 100%;
-  height: 20px;
-  background: url(../img/border-horiz.svg) 50% 65%;
-  transform: rotate(180deg);
+	bottom: 0;
+	width: 100%;
+	height: 20px;
+	background: url(../img/border-horiz.svg) 50% 65%;
+	transform: rotate(180deg);
 }
 
 .pagesection__frames div:nth-of-type(4) {
-  right: 0;
-  transform: rotate(180deg);
+	right: 0;
+	transform: rotate(180deg);
 }
 
 .pagesection__corners div::before,
 .pagesection__corners div::after {
-  content: '';
-  top: 12px;
-  left: 10px;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background: url(../img/corner.svg) no-repeat center center;
+	content: '';
+	top: 12px;
+	left: 10px;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: url(../img/corner.svg) no-repeat center center;
 }
 
 .pagesection__corners div:nth-child(1)::after {
-  top: 12px;
-  right: 10px;
-  left: auto;
-  transform: rotate(90deg);
+	top: 12px;
+	right: 10px;
+	left: auto;
+	transform: rotate(90deg);
 }
 
 .pagesection__corners div:nth-child(2)::before {
-  top: auto;
-  right: 10px;
-  bottom: 12px;
-  left: auto;
-  transform: rotate(180deg);
+	top: auto;
+	right: 10px;
+	bottom: 12px;
+	left: auto;
+	transform: rotate(180deg);
 }
 
 .pagesection__corners div:nth-child(2)::after {
-  top: auto;
-  bottom: 12px;
-  transform: rotate(270deg);
+	top: auto;
+	bottom: 12px;
+	transform: rotate(270deg);
 }
 
 
 /*** PAGE SECTIONS pagination ***/
 
 #fp-nav {
-  margin-right: 45px;
-  transition: .2s;
+	margin-right: 45px;
+	transition: .2s;
 }
 
 #fp-nav ul li a span {
-  background: #fff;
-  transition: all .2s;
-  transition-delay: .1s;
+	background: #fff;
+	transition: all .2s;
+	transition-delay: .1s;
 }
 
 #fp-nav ul li a.active span {
-  margin: -5px 0 0 -6px;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #fff;
-  border-radius: 100%;
-  background: transparent;
+	margin: -5px 0 0 -6px;
+	width: 12px;
+	height: 12px;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	background: transparent;
 }
 
 .fp-tooltip.right {
-  padding: 0 5px;
-  color: #fff !important;
-  background: #ef4138;
+	padding: 0 5px;
+	color: #fff !important;
+	background: #ef4138;
 }
-
 
 /*** PAGE SECTIONS content ***/
 
 .pagesection__item .pagesection__title {
-  position: relative;
-  margin-left: 20px;
-  font-size: 3em;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  transition: .5s;
-  transition-delay: .5s;
+	position: relative;	
+	margin-left: 20px;
+	font-size: 3em;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+	transition: .5s;
+	transition-delay: .5s;
 }
 
 .pagesection__btn {
-  padding: 10px 20px;
-  font-size: 0.4em;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #fff;
-  background: #ef4138;
+	padding: 10px 20px;
+	font-size: 0.4em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: #fff;
+	background: #ef4138;
 }
 
 .pagesection__btn:hover i {
-  padding-left: 15px;
+	padding-left: 15px;
 }
 
 .pagesection__btn i {
-  padding-left: 5px;
-  transition: .3s;
+	padding-left: 5px;
+	transition: .3s;
 }
 
 .pagesection__item.active .pagesection__title {
-  margin-left: 70px;
+	margin-left: 70px;
 }
 
 
 /*** FOOTER ***/
 
 .footer {
-  position: fixed;
-  padding: 0 70px 50px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  transition: .2s;
+	position: fixed;
+	padding: 0 70px 50px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	transition: .2s;
 }
 
 .callme {
-  float: left;
+	float: left;
 }
 
 .callme__mynumber {
-  font-size: 1.4em;
-  text-decoration: none;
-  text-shadow: 1px 1px 1px #000;
-  color: #fff;
+	font-size: 1.4em;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #000;
+	color: #fff;
 }
 
 .callme__mynumber:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .follow {
-  float: right;
+	float: right;
   font-size: 0;
   text-align: right;
 }
 
 .follow__entry {
-  position: relative;
-  display: inline-block;
-  margin: 0 5px;
+	position: relative;
+	display: inline-block;
+	margin: 0 5px;
   width: 30px;
   height: 30px;
   border: 1px transparent solid;
   border-radius: 50%;
   font-size: 12px;
   text-align: center;
-  box-shadow: 1px 1px 1px #000;
-  vertical-align: bottom;
+	box-shadow: 1px 1px 1px #000;
+	vertical-align: bottom;
   color: #6f6f6f;
   background: #111;
   transition: all 0.3s ease-out;
@@ -308,7 +308,7 @@ h2 {
 }
 
 .follow__entry::before {
-  content: "";
+	content: "";
   position: absolute;
   left: -2px;
   top: -2px;
@@ -329,7 +329,7 @@ h2 {
 }
 
 .follow__entry {
-  border-color: #fff;
+	border-color: #fff;
   color: #fff;
   background: none;
 }
@@ -343,185 +343,188 @@ h2 {
 }
 
 .follow__entry:hover .fa-instagram {
-  color: #125688;
+	color: #125688;
 }
 
 .follow__entry:hover .fa-facebook {
-  color: #45619D;
+	color: #45619D;
 }
 
 .follow__entry:hover .fa-vk {
-  color: #597B9F;
+	color: #597B9F;
 }
 
 .follow__entry:hover .fa-envelope-o {
-  color: #DA4A38;
+	color: #DA4A38;
 }
 
 
 /*** MEDIA 1920 ***/
 
 @media screen and (max-width: 1920px) {
-  .pagesection__item {
-    background: url(../pic/homepage/1920/wedding.jpg) no-repeat center center;
-    background-size: 100% auto;
-  }
-  .pagesection__item:nth-of-type(2) {
-    background: url(../pic/homepage/1920/lovestory.jpg) no-repeat center center;
-    background-size: 100% auto;
-  }
-  .pagesection__item:nth-of-type(3) {
-    background: url(../pic/homepage/1920/portrait.jpg) no-repeat center center;
-    background-size: 100% auto;
-  }
-  .pagesection__item:nth-of-type(4) {
-    background: url(../pic/homepage/1920/studio.jpg) no-repeat center center;
-    background-size: auto 100%;
-  }
+	.pagesection__item {
+	background: url(../pic/homepage/1920/wedding.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+
+	.pagesection__item:nth-of-type(2) {
+	background: url(../pic/homepage/1920/lovestory.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+
+	.pagesection__item:nth-of-type(3) {
+	background: url(../pic/homepage/1920/portrait.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
+.pagesection__item:nth-of-type(4) {
+	background: url(../pic/homepage/1920/studio.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+}
 
 /*** MEDIA 1366 ***/
 
 @media screen and (max-width: 1366px) {
-  .pagesection__item {
-    background: url(../pic/homepage/1366/wedding.jpg) no-repeat center center;
-    background-size: 100% auto;
-  }
-  .pagesection__item:nth-of-type(2) {
-    background: url(../pic/homepage/1366/lovestory.jpg) no-repeat center center;
-    background-size: 100% auto;
-  }
-  .pagesection__item:nth-of-type(3) {
-    background: url(../pic/homepage/1366/portrait.jpg) no-repeat center center;
-    background-size: 100% auto;
-  }
-  .pagesection__item:nth-of-type(4) {
-    background: url(../pic/homepage/1366/studio.jpg) no-repeat center center;
-    background-size: auto 100%;
-  }
+	.pagesection__item {
+	background: url(../pic/homepage/1366/wedding.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	
+	.pagesection__item:nth-of-type(2) {
+	background: url(../pic/homepage/1366/lovestory.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	.pagesection__item:nth-of-type(3) {
+	background: url(../pic/homepage/1366/portrait.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
+.pagesection__item:nth-of-type(4) {
+	background: url(../pic/homepage/1366/studio.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+}
 
 /*** MEDIA 700 ***/
 
 @media screen and (max-width: 700px) {
-  body {
-    font-size: 10px;
-  }
-  .header {
-    padding: 30px 45px 0;
-  }
-  .pagesection__item {
-    background: url(../pic/homepage/700/wedding.jpg) no-repeat center center;
-    background-size: 100% auto;
-  }
-  .pagesection__item:nth-of-type(2) {
-    background: url(../pic/homepage/700/lovestory.jpg) no-repeat center center;
-    background-size: 100% auto;
-  }
-  .pagesection__item:nth-of-type(3) {
-    background: url(../pic/homepage/700/portrait.jpg) no-repeat center center;
-    background-size: 100% auto;
-  }
-  .pagesection__item:nth-of-type(4) {
-    background: url(../pic/homepage/700/studio.jpg) no-repeat center center;
-    background-size: auto 100%;
-  }
-  .pagesection__frames div:nth-of-type(1),
-  .pagesection__frames div:nth-of-type(2),
-  .pagesection__frames div:nth-of-type(3),
-  .pagesection__frames div:nth-of-type(4) {
-    background-position: 100% 100%;
-  }
-  .pagesection__corners div::before,
-  .pagesection__corners div::after {
-    left: 5px;
-    top: 6px;
-  }
-  .pagesection__corners div:nth-child(1)::after {
-    right: 5px;
-    top: 6px;
-  }
-  .pagesection__corners div:nth-child(2)::before {
-    right: 5px;
-    bottom: 6px;
-  }
-  .pagesection__corners div:nth-child(2)::after {
-    bottom: 6px;
-  }
-  #fp-nav {
-    margin-right: 20px;
-  }
-  .pagesection__item.active .pagesection__title {
-    margin-left: 45px;
-  }
-  .footer {
-    padding: 0 45px 30px;
-  }
-  .follow__entry {
-    width: 24px;
-    height: 24px;
-    margin: 0 3px;
-  }
-  .follow .fa {
-    font-size: 11px;
-    line-height: 22px;
-  }
+	body {
+		font-size: 10px;
+	}
+
+	.header {
+		padding: 30px 45px 0; 
+	}
+
+	.pagesection__frames div:nth-of-type(1),
+	.pagesection__frames div:nth-of-type(2),
+	.pagesection__frames div:nth-of-type(3),
+	.pagesection__frames div:nth-of-type(4) {
+	background-position: 100% 100%;
+	}
+
+	.pagesection__corners div::before,
+	.pagesection__corners div::after {
+		left: 5px;
+		top: 6px;
+	}
+
+	.pagesection__corners div:nth-child(1)::after {
+		right: 5px;
+		top: 6px;
+	}
+
+	.pagesection__corners div:nth-child(2)::before {
+		right: 5px;
+		bottom: 6px;
+	}
+
+	.pagesection__corners div:nth-child(2)::after {
+		bottom: 6px;
+	}
+
+	#fp-nav {
+		margin-right: 20px;
+	}
+
+	.pagesection__item.active .pagesection__title {
+	margin-left: 45px;
+	}
+
+	.footer {
+		padding: 0 45px 30px;
+	}
+	
+	.follow__entry {
+		width: 24px;
+		height: 24px;
+		margin: 0 3px;
+	}
+
+	.follow .fa {
+		font-size: 11px;
+		line-height: 22px;
+	}
 }
 
 
 /*** MEDIA 480 ***/
 
 @media screen and (max-width: 480px) {
-  body {
-    font-size: 8px;
-  }
-  .header {
-    padding: 20px 25px 0;
-  }
-  .pagesection__item {
-    background: url(../pic/homepage/480/wedding.jpg) no-repeat center center;
-    background-size: 100% auto;
-  }
-  .pagesection__item:nth-of-type(2) {
-    background: url(../pic/homepage/480/lovestory.jpg) no-repeat center center;
-    background-size: 100% auto;
-  }
-  .pagesection__item:nth-of-type(3) {
-    background: url(../pic/homepage/480/portrait.jpg) no-repeat center center;
-    background-size: 100% auto;
-  }
-  .pagesection__item:nth-of-type(4) {
-    background: url(../pic/homepage/480/studio.jpg) no-repeat center center;
-    background-size: auto 100%;
-  }
-  .header__nav-item {
-    margin-left: 8px;
-  }
-  #fp-nav {
-    margin-right: 0;
-  }
-  .pagesection__item.active .pagesection__title {
-    width: 70%;
-    margin-left: 5px;
-  }
-  .pagesection__item.active .pagesection__title {
-    margin-left: 25px;
-  }
-  .footer {
-    padding: 0 25px 15px;
-  }
-  .callme__mynumber {
-    font-size: 11px;
-  }
-  .follow__entry {
-    width: 20px;
-    height: 20px;
-    margin: 0 2px;
-  }
-  .follow .fa {
-    font-size: 10px;
-    line-height: 18px;
-  }
+	body {
+		font-size: 8px;
+	}
+
+	.header {
+		padding: 20px 25px 0; 
+	}
+
+	.header__nav-item {
+		margin-left: 8px;
+	}
+	
+	#fp-nav {
+		margin-right: 0;
+	}
+
+	.pagesection__item.active .pagesection__title {
+		width: 70%;
+		margin-left: 5px;
+	}
+
+	.pagesection__item.active .pagesection__title {
+		margin-left: 25px;
+	}
+
+	.footer {
+		padding: 0 25px 15px;
+	}
+	
+	.callme__mynumber {
+		font-size: 11px;
+	}
+
+	.follow__entry {
+		width: 20px;
+		height: 20px;
+		margin: 0 2px;
+	}
+
+	.follow .fa {
+		font-size: 10px;
+		line-height: 18px;
+	}
 }
