@@ -5,9 +5,8 @@ $(document).ready(function() {
     	navigation: true,
     	navigationTooltips: ['свадебная фотография', 'love story', 'портрет', 'студийная фотография']
     });
-  });
 
-$('.grid').masonry({
+    $('.grid').masonry({
   // set itemSelector so .grid-sizer is not used in layout
   itemSelector: '.grid-item',
   // use element for option
@@ -16,6 +15,8 @@ $('.grid').masonry({
   gutter: 0
 }).imagesLoaded(function() {
     $(this).masonry('reload');
+  });
+
   });
 
 var amountScrolled = 200;
