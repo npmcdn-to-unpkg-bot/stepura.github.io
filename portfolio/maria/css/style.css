@@ -10,6 +10,7 @@
 
 body {
   font: 12px 'Open Sans Condensed', sans-serif;
+  background: #111;
 }
 
 h1,
@@ -73,20 +74,23 @@ h2 {
 /*** PAGE SECTIONS backgrounds ***/
 
 .pagesection__item {
-  background-image: url(../pic/homepage/2560/wedding.jpg);
-  background-size: cover;
+  background: url(../pic/homepage/2560/wedding.jpg) no-repeat center center;
+  background-size: 100% auto;
 }
 
 .pagesection__item:nth-of-type(2) {
-  background-image: url(../pic/homepage/2560/lovestory.jpg);
+  background: url(../pic/homepage/2560/lovestory.jpg) no-repeat center center;
+  background-size: 100% auto;
 }
 
 .pagesection__item:nth-of-type(3) {
-  background-image: url(../pic/homepage/2560/portrait.jpg);
+  background: url(../pic/homepage/2560/portrait.jpg) no-repeat center center;
+  background-size: 100% auto;
 }
 
 .pagesection__item:nth-of-type(4) {
-  background-image: url(../pic/homepage/2560/studio.jpg);
+  background: url(../pic/homepage/2560/studio.jpg) no-repeat center center;
+  background-size: auto 100%;
 }
 
 
@@ -359,16 +363,20 @@ h2 {
 
 @media screen and (max-width: 1920px) {
   .pagesection__item {
-    background-image: url(../pic/homepage/1920/wedding.jpg);
+    background: url(../pic/homepage/1920/wedding.jpg) no-repeat center center;
+    background-size: 100% auto;
   }
   .pagesection__item:nth-of-type(2) {
-    background-image: url(../pic/homepage/1920/lovestory.jpg);
+    background: url(../pic/homepage/1920/lovestory.jpg) no-repeat center center;
+    background-size: 100% auto;
   }
   .pagesection__item:nth-of-type(3) {
-    background-image: url(../pic/homepage/1920/portrait.jpg);
+    background: url(../pic/homepage/1920/portrait.jpg) no-repeat center center;
+    background-size: 100% auto;
   }
   .pagesection__item:nth-of-type(4) {
-    background-image: url(../pic/homepage/1920/studio.jpg);
+    background: url(../pic/homepage/1920/studio.jpg) no-repeat center center;
+    background-size: auto 100%;
   }
 }
 
@@ -377,16 +385,20 @@ h2 {
 
 @media screen and (max-width: 1366px) {
   .pagesection__item {
-    background-image: url(../pic/homepage/1366/wedding.jpg);
+    background: url(../pic/homepage/1366/wedding.jpg) no-repeat center center;
+    background-size: 100% auto;
   }
   .pagesection__item:nth-of-type(2) {
-    background-image: url(../pic/homepage/1366/lovestory.jpg);
+    background: url(../pic/homepage/1366/lovestory.jpg) no-repeat center center;
+    background-size: 100% auto;
   }
   .pagesection__item:nth-of-type(3) {
-    background-image: url(../pic/homepage/1366/portrait.jpg);
+    background: url(../pic/homepage/1366/portrait.jpg) no-repeat center center;
+    background-size: 100% auto;
   }
   .pagesection__item:nth-of-type(4) {
-    background-image: url(../pic/homepage/1366/studio.jpg);
+    background: url(../pic/homepage/1366/studio.jpg) no-repeat center center;
+    background-size: auto 100%;
   }
 }
 
@@ -401,16 +413,20 @@ h2 {
     padding: 30px 45px 0;
   }
   .pagesection__item {
-    background-image: url(../pic/homepage/700/wedding.jpg);
+    background: url(../pic/homepage/700/wedding.jpg) no-repeat center center;
+    background-size: 100% auto;
   }
   .pagesection__item:nth-of-type(2) {
-    background-image: url(../pic/homepage/700/lovestory.jpg);
+    background: url(../pic/homepage/700/lovestory.jpg) no-repeat center center;
+    background-size: 100% auto;
   }
   .pagesection__item:nth-of-type(3) {
-    background-image: url(../pic/homepage/700/portrait.jpg);
+    background: url(../pic/homepage/700/portrait.jpg) no-repeat center center;
+    background-size: 100% auto;
   }
   .pagesection__item:nth-of-type(4) {
-    background-image: url(../pic/homepage/700/studio.jpg);
+    background: url(../pic/homepage/700/studio.jpg) no-repeat center center;
+    background-size: auto 100%;
   }
   .pagesection__frames div:nth-of-type(1),
   .pagesection__frames div:nth-of-type(2),
@@ -465,16 +481,20 @@ h2 {
     padding: 20px 25px 0;
   }
   .pagesection__item {
-    background-image: url(../pic/homepage/480/wedding.jpg);
+    background: url(../pic/homepage/480/wedding.jpg) no-repeat center center;
+    background-size: 100% auto;
   }
   .pagesection__item:nth-of-type(2) {
-    background-image: url(../pic/homepage/480/lovestory.jpg);
+    background: url(../pic/homepage/480/lovestory.jpg) no-repeat center center;
+    background-size: 100% auto;
   }
   .pagesection__item:nth-of-type(3) {
-    background-image: url(../pic/homepage/480/portrait.jpg);
+    background: url(../pic/homepage/480/portrait.jpg) no-repeat center center;
+    background-size: 100% auto;
   }
   .pagesection__item:nth-of-type(4) {
-    background-image: url(../pic/homepage/480/studio.jpg);
+    background: url(../pic/homepage/480/studio.jpg) no-repeat center center;
+    background-size: auto 100%;
   }
   .header__nav-item {
     margin-left: 8px;
