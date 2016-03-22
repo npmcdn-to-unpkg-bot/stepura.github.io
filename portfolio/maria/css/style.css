@@ -76,6 +76,10 @@ h2 {
   color: #fff;
 }
 
+.header__nav-item--active {
+	color: #ef4138;
+}
+
 .header__nav-item:hover {
   text-decoration: underline;
 }
@@ -467,20 +471,66 @@ h2 {
 }
 
 
+/*** CONTACT ***/
+
+.contact {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	font-size: 1.7em;
+	line-height: 1.2em;
+	transform: translate(0, -50%);
+	color: #fff;
+	text-align: center;
+	transition: .3s;
+}
+
+.contact__title {
+	margin-bottom: 0.5em;
+	font-size: 3em;
+	line-height: 1em;
+	text-transform: lowercase;
+}
+
+.contact__hr {
+	width: 100px;
+	height: 1px;
+	margin: 1em auto;
+	background: #fff;
+}
+
+.contact__link {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.contact__link:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.contact__social a {
+	margin-left: 4em;
+}
+
+.contact__social a:first-child {
+	margin-left: 0;
+}
+
+.contact__social a:hover {
+	color: #ef4138;
+	border-bottom-color: #ef4138;
+}
 
 
-
-
-
-
-
-
+/*** ABOUT ME ***/
 
 .about-me__content {
 	width: 70%;
 	margin: 5em auto;
 	font-size: 2em;
 	line-height: 1.2em;
+	color: #fff;
 }
 
 .about-me__content-img {
