@@ -12,6 +12,10 @@ body {
   font: 12px 'Open Sans Condensed', sans-serif;
 }
 
+.about-me {
+	background: url(../img/pattern.png);
+}
+
 h1,
 h2 {
   font-size: 12px;
@@ -27,12 +31,17 @@ h2 {
   right: 0;
   padding: 50px 70px 0;
   z-index: 1;
+ 	overflow: hidden;
   transition: .2s;
 }
 
 .header--nofixed {
   position: absolute;
   top: 0;
+}
+
+.header--aboutme {
+	position: relative;
 }
 
 .header__logo {
@@ -456,6 +465,42 @@ h2 {
 .back-to-top:hover {
   background-color: #000;
 }
+
+
+
+
+
+
+
+
+
+
+
+.about-me__content {
+	width: 70%;
+	margin: 5em auto;
+	font-size: 2em;
+	line-height: 1.2em;
+}
+
+.about-me__content-img {
+	float: left;
+	width: 20%;
+	margin-right: 10%;
+}
+
+.about-me__content-img img {
+	width: 100%;
+	margin-top: 25px;
+}
+
+.about-me__content-text {
+	float: right;
+	width: 70%;
+}
+
+
+
 
 
 /*** MEDIA 1920 ***/
