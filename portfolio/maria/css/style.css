@@ -723,3 +723,7 @@ h2 {
     padding: 5px;
   }
 }
+
+@-ms-viewport {
+	width: device-width;
+}
