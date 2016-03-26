@@ -431,7 +431,7 @@ h2 {
 }
 
 .grid-item {
-  width: 25%;
+  width: 16.666%;
   padding: 15px;
   text-align: center;
   transition: .2s;
@@ -535,7 +535,7 @@ h2 {
 
 .about-me__content-img {
 	float: left;
-	width: 20%;
+	width: 30%;
 	margin-right: 10%;
 }
 
@@ -546,7 +546,7 @@ h2 {
 
 .about-me__content-text {
 	float: right;
-	width: 70%;
+	width: 60%;
 }
 
 
@@ -596,7 +596,6 @@ h2 {
     font-size: 45px;
   }
   .grid-item {
-    width: 33.333%;
     padding: 12px;
   }
 }
@@ -658,9 +657,21 @@ h2 {
     line-height: 22px;
   }
   .grid-item {
-    width: 50%;
+    width: 20%;
     padding: 10px;
   }
+
+  .about-me__content-img {
+	float: none;
+	width: 100%;
+	margin-right: 0;
+	}
+
+	.about-me__content-text {
+	float: none;
+	width: 100%;
+	
+
 }
 
 
@@ -708,7 +719,7 @@ h2 {
     line-height: 18px;
   }
   .grid-item {
-    width: 100%;
-    padding: 15px;
+    width: 33.333%;
+    padding: 5px;
   }
 }
